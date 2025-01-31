@@ -1,5 +1,5 @@
 # FiveM Server Setup
-FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, everything you need.
+FiveM Server Setup. ESX & QB-Core Versions Verified. Comes with modded vehicles, map mods, everything you need.
 
 # Resources
 
