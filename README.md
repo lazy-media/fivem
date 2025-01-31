@@ -14,6 +14,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - [GTA5 Mods](https://www.gta5-mods.com/)
 - [CarPack1](https://github.com/five-m/Vehicles/tree/master)
 - [CarPack2](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
+- [CarPack3](https://github.com/Zerofour04/Fivem-BigCarPack?tab=readme-ov-file)
 
 # Assumptions
 
