@@ -76,9 +76,12 @@ The full command to change into this directory should be something like `cd \hom
 
 - Add the following to your `server.cfg` file to enable the mods
 
-  - `ensure [vehicles]`
-  - `ensure [map_mods]`
-
+  ```
+  ensure [vehicles]
+  ```
+  ```
+  ensure [map_mods]
+  ```
 
 # BONUS
 
