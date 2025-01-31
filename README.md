@@ -1,13 +1,19 @@
 # FiveM Server Setup
 FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, everything you need.
 
+# NOTICE
+
+- I take no credit in creating any of these. I simply just gathered all the resources necessary to run a FiveM server and put it all in one place.
+- I tried to make this as easy as possible for me or anyone else who needs this.
+- This repository has the latest server artifacts
+
 # Resources
 
-All Mods were found and downloaded from [GTA5 Mods](https://gta5-mods.com)
-
-(STILL NEEDS TO BE UPLOADED, STILL ORGANIZING) Any vehicles in the `[vehicles]/[vehicle_pack]` were from [here](https://github.com/five-m/Vehicles/tree/master)
-
-I take no credit in creating any of these. I simply just gathered all the resources necessary to run a FiveM server and put it all in one place.
+- [FiveM Docs](https://docs.fivem.net/docs/server-manual/setting-up-a-server-vanilla/)
+- [FiveM Server Download (Latest Build Number 12629)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/12629-1035d9b5ef145feff915708e4c02a3300e3a53c9/fx.tar.xz)
+- [GTA5 Mods](https://www.gta5-mods.com/)
+- [CarPack1](https://github.com/five-m/Vehicles/tree/master)
+- [CarPack2](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
 
 # Assumptions
 
@@ -29,13 +35,11 @@ I take no credit in creating any of these. I simply just gathered all the resour
 
 ## Part 1
 
-
 - Extract `fx.tar.xz` with `tar xf fx.tar.xz`
 - Rename this FX Server folder to `FXServer`
 - Place the `fxserver.service` file in `/etc/systemd/system`
 - Start the service with `systemctl start fxserver`
 - Enable this service to start at system boot with `systemctl enable fxserver`
-
 
 # Part 2
 
