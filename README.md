@@ -12,7 +12,7 @@ I take no credit in creating any of these. I simply just gathered all the resour
 # Assumptions
 
 - This repository assumes your Ubuntu Server is setup as standard
-- This repository assumes your Ubuntu Server name is `ubuntu`
+- This repository assumes your Ubuntu Server username is `ubuntu`
 - Please Double check any files to make sure your paths are correct
 - This repository assumes your main home directory is `/home/ubuntu/`
 
