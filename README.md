@@ -47,12 +47,30 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
   git clone https://github.com/lazy-media/fivem.git
   ```
 - Grab something to eat or a coffe and wait for this download...
-- Navigate to fivem with ```cd fivem/```
-- Extract `fx.tar.xz` with `tar xf fx.tar.xz`
-- Rename this FX Server folder to `FXServer`
-- Place the `fxserver.service` file in `/etc/systemd/system`
-- Start the service with `systemctl start fxserver`
-- Enable this service to start at system boot with `systemctl enable fxserver`
+- Navigate to fivem with
+  ```
+  cd fivem/
+  ```
+- Extract `fx.tar.xz` with
+  ```
+  tar xf fx.tar.xz
+  ```
+- Rename this FX Server folder to `FXServer` with
+  ```
+  mv fx FXServer
+  ```
+- Copy the `fxserver.service` file into `/etc/systemd/system` with
+  ```
+  cp fxserver.service /etc/systemd/system
+  ```
+- Start the service with
+  ```
+  systemctl start fxserver
+  ```
+- Enable this service to start at system boot with
+  ```
+  systemctl enable fxserver
+  ```
 
 # Part 2
 
@@ -66,7 +84,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 
 - When TXAdmin is complete, ssh back into the ubuntu server.
 - Navigate back to your home directory or wherever you installed FiveM to.
-  - For me it `cd \home\ubuntu\FXServer\`
+  - For me it is `cd \home\ubuntu\FXServer\`
   - If you show what is listed in the folder with `ls -a`, you should have a folder called `server`
   - Navigate into this folder
   - You should have a folder called `txData`
