@@ -7,7 +7,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 
 # NOTICE
 
-- This Repository is **VERY LARGE!** More than 5GB.
+- This Repository is **VERY LARGE!** More than 10GB.
 - I take no credit in creating any of these. I simply just gathered all the resources necessary to run a FiveM server and put it all in one place.
 - I tried to make this as easy as possible for me or anyone else who needs this.
 - This repository has the latest server artifacts
