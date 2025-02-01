@@ -57,7 +57,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
   ```
 - Rename this FX Server folder to `FXServer` with
   ```
-  mv fx FXServer
+  mv fx /home/ubuntu/FXServer
   ```
 - Copy the `fxserver.service` file into `/etc/systemd/system` with
   ```
