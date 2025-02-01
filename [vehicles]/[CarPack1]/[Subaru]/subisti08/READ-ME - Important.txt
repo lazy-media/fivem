@@ -1,5 +1,0 @@
-Cars pack by Mr.TnT.
-
-folder name should be: subisti08
-
-add start subisti08 in your server.cfg
