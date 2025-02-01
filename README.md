@@ -11,6 +11,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - I tried to make this as easy as possible for me or anyone else who needs this.
 - This repository has the latest server artifacts
 - `CarPack0` has vehicles that I personally found on [GTA5 Mods](https://www.gta5-mods.com/) that worked.
+- `CarPack2` has the most vehicles in it and is made by someone else. For this reason only, any duplicate vehicles found within the other car packs will be removed as to not conflict or double up on resources.
 
 # Resources
 
