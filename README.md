@@ -116,6 +116,12 @@ ensure [map_mods]
 
 If you have vMenu installed, copy the contents of the `vMenu_addon_conf.json` to your vMenu addon configuration to enable the vehicles to be selected using vMenu
 
+
 # Admin Vehicle
 
 - In vMenu or however you spawn vehicles by name, there is an admin vehicle in `[CarPack0]` that is not listed in the vMenu Car Addons Menu. To Spawn this vehicle by name enter `sfbc3`.
+
+# Additonal Information
+- There is a backup of this repository on my personal Gitlab server. You can find the repository [here.](https://link.lazymedia.media/gitlab-fivem)
+- [YouTube Channel](https://link.lazymedia.media/ytchannel)
+- [Lazy Media's Website](https://link.lazymedia.media/UODds)
