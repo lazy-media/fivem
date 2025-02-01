@@ -8,11 +8,11 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 # NOTICE
 
 - This Repository is **VERY LARGE!** More than 10GB.
-- I take no credit in creating any of these. I simply just gathered all the resources necessary to run a FiveM server and put it all in one place.
+- I take no credit in creating any of these. I simply just gathered, renamed and organized all the resources necessary to run a FiveM server and put it all in one place.
 - I tried to make this as easy as possible for me or anyone else who needs this.
-- This repository has the latest server artifacts
+- This repository has the latest server artifacts included. (May need to still update QB-Core artifacts if using QB-Core)
 - `CarPack0` has vehicles that I personally found on [GTA5 Mods](https://www.gta5-mods.com/) that worked.
-- `CarPack2` is specially made repository by someone else. For this reason only, any duplicate vehicles found within the other car packs will be removed as to not conflict or double up on resources.
+- `CarPack2` is a specially made repository by someone else. For this reason only, any duplicate vehicles found within the other car packs will be removed as to not conflict or double up on resources.
 - Any duplicate vehicles have been removed from this repository. All cars are listed in alphabetical order in the `vMenu_Addons_config.json` file.
 
 # Resources
