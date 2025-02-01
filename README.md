@@ -33,36 +33,22 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 # Setup
 
 - Install Ubuntu Server 20.04 or higher
-- Log into Ubuntu Server via SSH
-- Make yourself root with `sudo su`
+- Install [Webmin](https://webmin.com/download/) for ease of use for navigating the Ubuntu Server
+- Or use something like MobaXterm, or XPipe to transfer files to the FiveM Server. It's your choice on how you want to do this.
 
 # Instructions
 
+- For Best Results on Installing this correctly, watch the [YouTube Video]() I made for it.
 - This repository is meant to be downloaded as a whole.
 - Please follow these instructions carefully.
 
 ## Part 1
-- Download repository with
-  ```
-  git clone https://github.com/lazy-media/fivem.git
-  ```
+- Download repository
 - Grab something to eat or a coffee and wait for this download...
-- Navigate to fivem with
-  ```
-  cd fivem/
-  ```
-- Extract `fx.tar.xz` with
-  ```
-  tar xf fx.tar.xz
-  ```
-- Rename this FX Server folder to `FXServer` with
-  ```
-  mv fx /home/ubuntu/FXServer
-  ```
-- Copy the `fxserver.service` file into `/etc/systemd/system` with
-  ```
-  cp fxserver.service /etc/systemd/system
-  ```
+- Navigate to fivem folder
+- Extract `fx.tar.xz`
+- Rename this `fx` folder to `FXServer`
+- Copy the `fxserver.service` file into `/etc/systemd/system`
 - Start the service with
   ```
   systemctl start fxserver
