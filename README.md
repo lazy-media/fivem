@@ -42,7 +42,12 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - Please follow these instructions carefully.
 
 ## Part 1
-
+- Download repository with
+  ```
+  git clone https://github.com/lazy-media/fivem.git
+  ```
+- Grab something to eat or a coffe and wait for this download...
+- Navigate to fivem with ```cd fivem/```
 - Extract `fx.tar.xz` with `tar xf fx.tar.xz`
 - Rename this FX Server folder to `FXServer`
 - Place the `fxserver.service` file in `/etc/systemd/system`
