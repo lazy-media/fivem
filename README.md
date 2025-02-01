@@ -6,13 +6,12 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 **OVER 400 VEHICLES**
 
 # NOTICE
-
-- This Repository is **VERY LARGE!** More than 10GB.
-- I take no credit in creating any of these. I simply just gathered all the resources necessary to run a FiveM server and put it all in one place.
+## THIS REPOSITORY IS VERY LARGE. ABOUT 12GB.
+- I take no credit in creating any of these. I simply just gathered, renamed and organized all the resources necessary to run a FiveM server and put it all in one place.
 - I tried to make this as easy as possible for me or anyone else who needs this.
-- This repository has the latest server artifacts
+- This repository has the latest server artifacts included. (May need to still update QB-Core artifacts if using QB-Core)
 - `CarPack0` has vehicles that I personally found on [GTA5 Mods](https://www.gta5-mods.com/) that worked.
-- `CarPack2` is specially made repository by someone else. For this reason only, any duplicate vehicles found within the other car packs will be removed as to not conflict or double up on resources.
+- `CarPack2` is a specially made repository by someone else. For this reason only, any duplicate vehicles found within the other car packs will be removed as to not conflict or double up on resources.
 - Any duplicate vehicles have been removed from this repository. All cars are listed in alphabetical order in the `vMenu_Addons_config.json` file.
 
 # Resources
@@ -34,21 +33,30 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 # Setup
 
 - Install Ubuntu Server 20.04 or higher
-- Log into Ubuntu Server via SSH
-- Make yourself root with `sudo su`
+- Install [Webmin](https://webmin.com/download/) for ease of use for navigating the Ubuntu Server
+- Or use something like MobaXterm, or XPipe to transfer files to the FiveM Server. It's your choice on how you want to do this.
 
 # Instructions
 
+- For Best Results on Installing this correctly, watch the [YouTube Video]() I made for it.
 - This repository is meant to be downloaded as a whole.
 - Please follow these instructions carefully.
 
 ## Part 1
-
-- Extract `fx.tar.xz` with `tar xf fx.tar.xz`
-- Rename this FX Server folder to `FXServer`
-- Place the `fxserver.service` file in `/etc/systemd/system`
-- Start the service with `systemctl start fxserver`
-- Enable this service to start at system boot with `systemctl enable fxserver`
+- Download repository
+- Grab something to eat or a coffee and wait for this download...
+- Navigate to fivem folder
+- Extract `fx.tar.xz`
+- Rename this `fx` folder to `FXServer`
+- Copy the `fxserver.service` file into `/etc/systemd/system`
+- Start the service with
+  ```
+  systemctl start fxserver
+  ```
+- Enable this service to start at system boot with
+  ```
+  systemctl enable fxserver
+  ```
 
 # Part 2
 
@@ -62,7 +70,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 
 - When TXAdmin is complete, ssh back into the ubuntu server.
 - Navigate back to your home directory or wherever you installed FiveM to.
-  - For me it `cd \home\ubuntu\FXServer\`
+  - For me it is `cd \home\ubuntu\FXServer\`
   - If you show what is listed in the folder with `ls -a`, you should have a folder called `server`
   - Navigate into this folder
   - You should have a folder called `txData`
@@ -116,6 +124,12 @@ ensure [map_mods]
 
 If you have vMenu installed, copy the contents of the `vMenu_addon_conf.json` to your vMenu addon configuration to enable the vehicles to be selected using vMenu
 
+
 # Admin Vehicle
 
 - In vMenu or however you spawn vehicles by name, there is an admin vehicle in `[CarPack0]` that is not listed in the vMenu Car Addons Menu. To Spawn this vehicle by name enter `sfbc3`.
+
+# Additonal Information
+- There is a backup of this repository on my personal Gitlab server. You can find the repository [here.](https://link.lazymedia.media/gitlab-fivem)
+- [YouTube Channel](https://link.lazymedia.media/ytchannel)
+- [Lazy Media's Website](https://link.lazymedia.media/UODds)
