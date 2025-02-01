@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVariation>
+  <variationData>
+	 <Item>
+      <modelName>fairlane66</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array"> <!-- Silver Frost -->
+            4
+            3
+            111
+            106
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Springtime Yellow -->
+            162
+            107
+            3
+            156
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Raven Black -->
+            0
+            27
+            3 
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Arcadian Blue -->
+            67
+            127
+            3
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Sahara Beige -->
+            107
+            104
+            3
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Nightmist Blue -->
+            164
+            73
+            63 
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Wimbledon White -->
+            111
+            3
+            3
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Antique Bronze -->
+            165
+            99
+            165
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Ivy Green -->
+            49
+            102
+            3
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Candyapple Red -->
+            27
+            27
+            1
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Tahoe Turquoise -->
+            161
+            107
+            111
+            156
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Emberglo -->
+            166
+            104
+            5
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Vintage Burgundy -->
+            167
+            27
+            3
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Silver Blue -->
+            7
+            73
+            3
+            156 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array"> <!-- Sauterne Gold -->
+            168
+            99
+            3
+            156 
+          </indices>
+        </Item>
+      </colors>
+      <kits>
+        <Item>fair500_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Blue Plate</Name>
+            <Value value="50" />
+          </Item>
+          <Item>
+            <Name>Yellow Plate</Name>
+            <Value value="50" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="499" />
+      <sirenSettings value="0" />
+     </Item>
+  </variationData>
+</CVehicleModelInfoVariation>
