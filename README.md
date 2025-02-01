@@ -1,4 +1,4 @@
-# Donations
+# Consideration
 I have taken a lot of time to put this repository together. If you found it useful or used it, please consider [donating](https://www.paypal.com/paypalme/lazymediawa)
 
 # FiveM Server Setup
@@ -17,7 +17,6 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - [GTA5 Mods](https://www.gta5-mods.com/)
 - [CarPack1](https://github.com/five-m/Vehicles/tree/master)
 - [CarPack2](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
-- [CarPack3](https://github.com/Zerofour04/Fivem-BigCarPack?tab=readme-ov-file)
 
 # Assumptions
 
@@ -76,19 +75,41 @@ The full command to change into this directory should be something like `cd \hom
   - Copy both of these folders into your `resources` folder.
 
 - Edit your server config, preferrebly from TXAdmin Web Interface, or you can edit it through ssh
-  - Your server config file is located in `\home\ubuntu\FXServer\server\txData\QBCoreFramework_jfieo38.base\` named `server.cfg`
+  - Your server config file is located in `\home\ubuntu\FXServer\server\txData\QBCoreFramework_xxxxxxx.base\` named `server.cfg`
 
 - Add the following to your `server.cfg` file to enable the mods
 
-  ```
-  ensure [vehicles]
-  ```
-  ```
-  ensure [map_mods]
-  ```
+**For All Vehicles**
+```
+ensure [vehicles]
+```
+
+**For Indvidual Car Packs**
+```
+ensure [CarPack0]
+```
+```
+ensure [CarPack1]
+```
+```
+ensure [CarPack2]
+```
+```
+ensure [CarPack3]
+```
+
+**For Map Mods**
+```
+ensure [map_mods]
+```
+
 
 # BONUS
 
 ## vMenu
 
 If you have vMenu installed, copy the contents of the `vMenu_addon_conf.json` to your vMenu addon configuration to enable the vehicles to be selected using vMenu
+
+# Admin Vehicle
+
+- In vMenu or however you spawn vehicles by name, there is an admin vehicle in `[CarPack0]` that is not listed in the vMenu Car Addons Menu. To Spawn this vehicle by name enter `sfbc3`.
