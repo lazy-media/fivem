@@ -20,7 +20,7 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - [FiveM Server Download (Latest Build Number 12629)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/12629-1035d9b5ef145feff915708e4c02a3300e3a53c9/fx.tar.xz)
 - [CarPack0 / GTA5 Mods](https://www.gta5-mods.com/)
 - [CarPack1](https://github.com/five-m/Vehicles/tree/master)
-- [CarPack2](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
+- [PLOKS_CARS](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
 - [CarPack3](https://github.com/Zerofour04/Fivem-BigCarPack)
 - [EasyAdmin Documentaion](https://easyadmin.readthedocs.io/en/latest/install/)
 - [EasyAdmin GitHub Repository](https://github.com/Blumlaut/EasyAdmin)
@@ -112,7 +112,7 @@ ensure [CarPack0]
 ensure [CarPack1]
 ```
 ```
-ensure [CarPack2]
+ensure PLOKS_CARS
 ```
 ```
 ensure [CarPack3]
