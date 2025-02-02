@@ -22,6 +22,12 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - [CarPack1](https://github.com/five-m/Vehicles/tree/master)
 - [CarPack2](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
 - [CarPack3](https://github.com/Zerofour04/Fivem-BigCarPack)
+- [EasyAdmin Documentaion](https://easyadmin.readthedocs.io/en/latest/install/)
+- [EasyAdmin GitHub Repository](https://github.com/Blumlaut/EasyAdmin)
+- [LambdaMenu Cfx.re Documentation](https://forum.cfx.re/t/release-lambda-menu/146)
+- [LambdaMenu GitHub Repository](https://github.com/citizenfx/project-lambdamenu)
+- [vMenu Installation Documentaion](https://docs.vespura.com/vmenu/installation/)
+- [vMenu GitHub Repository](https://github.com/TomGrobbe/vMenu)
 
 # Assumptions
 
