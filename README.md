@@ -29,6 +29,10 @@ FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, every
 - [vMenu Installation Documentaion](https://docs.vespura.com/vmenu/installation/)
 - [vMenu GitHub Repository](https://github.com/TomGrobbe/vMenu)
 
+# ND-Core Framework
+
+- [ND-Core Framework TxAdmin Recipe / GitHub](https://github.com/ND-Framework/txadmin-recipe)
+
 # Assumptions
 
 - This repository assumes your Ubuntu Server is setup as standard
