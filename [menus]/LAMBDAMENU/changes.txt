@@ -1,0 +1,641 @@
+Lambda Menu (formerly Enhanced Reborn / Enhanced FiveM Traier Remix / EFMTR)
+
+Credits (SUPER IMPORTANT!!): 
+Sami Alaoui (fb.me/TheDroidGeek): Enhanced FiveM Trainer code. (he started the fivem trainer project originally!)
+Rob Pridham and fellow contributors: Enhanced Native Trainer menu base & misc code.
+Alexander Blade: Script Hook V & SDK
+
+*Lambda Menu intended for ONLY FiveM, and will not function correctly in Single Player or GTA:Online.*
+
+**************************************************************************************************
+Final Project Update [3/13/2017]
+
+Project has been rebranded as Lambda Menu
+
+--Fixed ** INVALID ** player name issue
+--Removed fire ammo & explosive ammo/melee
+--All hotkeys can be disabled with NULL (lm-config.xml)
+--Added GTA:O style pointing when pressing "B" key (lm-config.xml)
+--Added player death blip
+--Bigger player blips on pause menu map
+----(Code contributed by thedroidgeek)
+
+Note: If you do not set a hotkey for each function in lm-config.xml, the function WILL NOT WORK.
+All default-hardcoded hotkeys have been removed with the exception of menu controls, noclip controls, and editor controls.
+
+**************************************************************************************************
+**************************************************************************************************
+Previous Releases As Enhanced Reborn
+
+Update 5 [1/28/2017]
+
+ACTIONS:
+--Added 3 'clear task' options
+
+VEHICLES:
+-Added proper removal/delete
+-Added proper door locking
+
+OTHER:
+--Added clip recording (er-config.xml)
+----F3 key to start recording / stop recording with save
+----DEL key to discard current recording (must be recording to discard)
+
+CLIP EDITING:
+To edit the clips you recorded, you MUST remain connected to the server. This ensures the loading of custom
+resources from the server, in the editor. The process to edit clips goes like this (for now):
+1: Record and save your clip
+2: In the trainer, select "Leave Session"
+3: Pause and select the Rockstar Editor
+4: Edit/Save/Export your clips as normal
+5: Exit game when finished
+
+Note: If you completely disconnect from the server you recorded the clips on, rather than 'leave session',
+you will not be able to see any of the custom server resources (this means all custom cars, guns, maps, etc).
+Currently this is the only way to edit videos and there is no way to rejoin the server from the closed session,
+or from video editing. Hopefully this process will become more streamlined in the future.
+
+**************************************************************************************************
+Update 4 [1/5/2017]
+
+PLAYER:
+--Added 'Spawn Player Models By Name'*
+
+WEAPONS:
+--Added 'Spawn Weapon Models By Name'*
+--Added 'Spawn Weapon Component Models By Name'*
+
+NOCLIP:
+--'H' Key now hides the entire noclip menu
+
+*for use with add-on models
+
+**************************************************************************************************
+Update 3 [1/1/2017]
+
+VEHICLES:
+--Added Biker DLC Vehicles
+--Added Biker DLC Wheels
+--Added hotkeys for vehicle doors/hood/trunk. 'Vehicles Controls' must be enabled! (er-config.xml)
+----Front Left Door Hotkey: CTRL+NUMPAD7
+----Hood Hotkey: CTRL+NUMPAD8
+----Front Right Door Hotkey: CTRL+NUMPAD9
+----Back Left Door Hotkey: CTRL+NUMPAD4
+----Trunk Hotkey: CTRL+NUMPAD5
+----Back Right Door Hotkey: CTRL+NUMPAD6
+--Added "Limited Cosmetic Damage" to 'Damage Settings'
+----Only scratches show / Vehicle doors do not close (the native that repairs scratches is the one that resets the doors also)
+--Default rims are now paintable
+--'Random Cosmetic Upgrades' now also randomizes wheel groups
+--Removed exhaust & xenon lights from 'Max Performance Upgrades'
+--Removed paint colors from 'Random Cosmetic Upgrades'
+--Added exhaust & xenon lights to 'Random Cosmetic Upgrades'
+--Added "Random Paint Colors" 
+--Drift Mode hotkey can now be changed in er-config.xml
+--Speedometer now has 3 options: KPH, MPH, KPH+MPH
+--Added toggle to remove previous vehicle when spawning a new one
+--Added option to delete owned vehicle
+
+CAMERA:
+--Added 'Perspective' options
+----Horizontal Lock: locks camera center behind (ebrake cam lock)
+----Vertical Lock: locks camera center behind
+----Clamp Horizontal: locks camera center behind with optional degree swing
+----Clamp Vertical: locks camera center behind with optional degree swing
+--Added 'Relative' options
+----Horizontal Lock: locks relative camera, can be moved
+----Vertical Lock: locks relative camera, can be moved
+
+SETTINGS:
+--Added 'Voice Options'
+----Voice chat on/off toggle
+----Seperate voice channels
+----Voice proximity options
+--Added 'Map Blips' toggle (restart required to remove map blips)
+--Added 'Player Names in Vehicles' toggle
+--Added hotkey for 'Player Names in Vehicles' toggle (er-config.xml)
+--Added hotkey for 'Player Names' toggle (er-config.xml)
+--Added 'Hide Map' toggle & option into the 'NUMPAD MULTIPLY' cycle
+----New Cycle: Small Map --> Large Map --> Large Map + Blip Names --> No Map --> back to Small Map
+
+OTHER:
+--Renamed 'Animations' menu to 'Actions'
+--Moved 'Camera' menu into 'World' menu
+--Renamed 'Teleports' menu to 'Locations' and moved into 'World' menu
+
+BUG FIXES:
+--Fixed vehicle suspension options not displaying correct text beyond the 5th option
+--Fixed broken horn options
+--Fixed remote engine controls not turning on/off engine
+--When starting game with previous map setting saved as 'large map + player blip names', player blip names state was not being saved/loaded
+--When starting game with previous map setting saved as 'hide map', map state was not being saved/loaded
+--'Random Cosmetic Mods' now works properly on motorcycles
+--Off-road motorcycles no longer spawn with street tires when upgraded
+--Some things were missing from 'Reset All Settings'
+--Fixed duplicate player-blip bug (when toggling them off/on)
+--Fixed some map location blips
+--Fixed custom tires bug
+--Improved exception handling
+
+Note: mp player models are still broken-ish
+
+**************************************************************************************************
+Update 2 [8/5/2016]
+
+DLC Update:
+--'Executives and Other Criminals'
+--'Festive Surprise 2015'
+--'Drop Zone January 2016'
+--'Be My Valentine 2016'
+--'Lowriders 2; Custom Classics'
+--'Further Adventures in Finance & Felony'
+--'Cunning Stunts'
+
+ONLINE PLAYERS:
+--New updated GTA:O style player-vehicle blips on map & minimap
+----Added more vehicle variants
+
+PLAYER:
+--Added all remaining DLC clothing items
+--"Clean & Heal Player" no longer adds armor
+----Added a seperate "Give Armor To Player" option
+--Removed auto randomization of textures & props when chosing Free Mode Male & Female player skins
+----Added "Randomize Skin Textures" seperately
+----Added "Randomize Props" seperately
+
+WEAPONS:
+--Added all remaining DLC weapons/skins/attatchments
+
+VEHICLES:
+--Added all remaining DLC vehicles
+----NOTE: There is now a 2nd page of vehicle categories, the 'VIP' section is there.
+--'Max Performance Upgrades' no longer includes window tint
+--'Random Cosmetic Upgrades' now randomizes window tints
+--Changed the way Turn Signals work in 'Vehicle Controls'
+----Pressing the hotkey will now toggle them on/off
+--Added "Hazard Lights" to 'Owned Vehicle' -> 'Remote Options'
+--Added a No Siren hotkey for police and emergency vehicles; NUMPAD MINUS (-)
+----Pressing it will turn off the siren. when E is pressed, only the lights will work
+----NOTE: This seems to only work clientside (other players still hear the siren)
+--'Owned Vehicle' blips now match the type of vehicle
+
+WORLD:
+--Added New 'World' Category
+--Added ability to change time of day; 'Time Options'
+--Moved 'Weather' category & renamed to "Weather Options" sub-category
+
+MISCELLANEOUS:
+--Brought back the Player Names toggle
+--Seperated on/off toggles for Player Notifications & Death Notifications
+--Added 'Hide Area & Street Names' toggle
+--Added toggle to see player names over their blips on the minimap (Code contributed by thedroidgeek, thanks dude!)
+----Note: Large HUD must be enabled to see names on map
+----Pressing the 'NUMPAD MULTIPLY' key cycles Large HUD & Player Blip Name options (change in er-config.xml)
+----Cycle: Small HUD --> Large HUD --> Large HUD + Blip Names --> back to Small HUD
+
+OTHER:
+--Player name tags are no longer visible behind large objects/walls (Credit: Tusticles)
+
+BUG FIXES:
+--Fixed incorrect vehicle category, which caused a crash when selecting
+--Removed max timeouts when keys were held down for certain options (SHIFT for drift mode, etc)(edited)
+--Fixed missing & broken weapon attatchments & skins
+
+**************************************************************************************************
+Update 1 [06/30/2016]
+
+ONLINE PLAYERS:
+--Death notifications now show how player died (Credit: thedroidgeek)
+--Changed notification colors:
+----players joining are GREEN
+----players leaving are RED
+----killers are YELLOW
+----deaths are ORANGE
+----general player info is BLUE
+
+PLAYER:
+--Disabled weapons when using animal models (caused game to crash when shooting)
+
+VEHICLES:
+--Changed license plate upgrade text to "REBORN"
+
+OTHER:
+--Changed "Large HUD" toggle key to 'NUMPAD MULTIPLY' (was 'Z', change in er-config.xml)
+--Corrected "Exit FiveM" to work with FiveReborn
+--Database changes
+--Improved Compatibility with FiveReborn
+--Optimized some code from the last release
+--Fixed some leftover minor bugs
+
+**************************************************************************************************
+**************************************************************************************************
+Previous Releases As Enhanced FiveM Traier Remix / EFMTR
+
+Update 13 [12/13/2015]
+
+ONLINE PLAYERS:
+--Now displays the players name for their menu options
+--Draw Route To Player now live updates route (route may flicker a bit)
+
+PLAYER:
+--Player skins "Freemode Male" & "Freemode Female" now randomize props and textures when selected
+--Added Silent Mode toggle
+--Improved Spectate Mode (thanks Wetdream!)
+--Improved Teleport To Player
+--Added animal skins; first person camera is disabled while playing as an animal
+----Some animals cannot be invincible: All Birds, All Fish
+--Added directional force to ragdoll
+----while holding NUMPAD1 to ragdoll, press NUMPAD7 (change in config.xml)
+------entity force randomizes x,y,z & xROT,yROT,zROT so each press will be different
+
+VEHICLES:
+--Organized 'Modifications' menu
+--Added default lsc tire smoke colors to last page
+--Added Remote Headlights
+--Cleaned up Neon colors menu
+--Removed 'Slam Suspension'
+--Added 'Suspension Options' menu; 6 additional lowering settings added
+--Vehicle neon state (on/off) now saves & loads
+
+TELEPORT:
+--Fixed 'Yacht'; no longer loads the SP model
+--Added 12 more locations
+
+WEATHER:
+--Moved "Blackout" to Weather menu
+
+MISCELLANEOUS:
+--Added ''Restore Appearance on Respawn'
+--Improved 'Restore Weapons on Respawn' code
+	----------------------
+--Added vehicle blip sprites for players**
+--Added GTA:O heading indicator to player blips**
+--Added player death notifications**
+--Added 'Death Cutscene' toggle**
+**Code contributed by thedroidgeek, thanks dude! (https://github.com/thedroidgeek/GTAV-EnhancedFiveMTrainer)
+
+NOCLIP:
+--Press 'H' to hide the noclip help text
+
+BLIPS:
+--Added 1 North Yankton Bank blip (load north yankton to get to it)
+--Added 2 Police Station blips
+--Added 2 Boat blips
+--Added 1 missing Openinteriors blip
+--Fixed Cluckin Bell Openinteriors blip
+
+OTHER:
+--Added ability to push through doors/walls with NUMPAD DIVIDE key: "/" (change in config.xml)
+
+BUG FIXES:
+--Fixed player names changing to "friend" / "enemy" when marking players
+--Fixed self-player blip not showing for some people
+--Fixed crashing issue when opening the big map for some people (pause screen)
+--Fixed vehicle modifications displaying mods that are not applicable to model (ie; neons on bikes)
+++Misc code cleanup & stability improvements
+++Database code improvements
+
+**************************************************************************************************
+Update 12 [11/24/2015]
+
+WEAPONS:
+--Added dlc gun skins
+--Added Knuckleduster skins
+
+VEHICLES:
+--Tweaked the way 'invincibility' options work; renamed to 'Damage Settings'
+--Added set Primary + Secondary paints at once
+--Tweaked Pearlescents, you can now apply pearl to any paint type
+
+MISCELLANEOUS:
+--Added world 'Blackout' (client-side only)
+
+BLIPS:
+--Added 1 Police Station blip
+--Added 2 Fire Station blips
+--Added 3 Convenience Store blips
+--Added 2 Bank blips
+
+OTHER:
+--New Compact UI; Moved to right side to accommodate for new chat style
+--Organized Vehicles menu
+--Moved Speedometer to right corner
+
+BUG FIXES:
+--Fixed some category titles that were displaying invalid characters
+
+**************************************************************************************************
+Update 11 [11/15/2015]
+
+ONLINE PLAYERS:
+--Added 'Mark as friendly'
+--Added 'Mark as hostile'
+--Added 'Clear Mark'
+
+MISCELLANEOUS:
+--Added color to map blips
+--Changed map blip display style (suggested by thedroidgeek, thanks!)
+--Added 37 Green Checkmark blips to all OpenInteriors3 locations*.
+*For best results, open OpenInteriors3's config file and disable blips: "addInteriorBlipsAtStartup=0" 
+
+EXTRAS:
+--'Z' key now toggles large hud, gtao style minimap (change in config.xml)
+
+BUG FIXES:
+--Fixed a few blips in the wrong place
+--Fixed 'Clean & Heal Player' to also fill armor
+--Fixed 'Default' tire smoke color
+--Fixed a critical bug that was crashing the trainer on-load for some people
+--Fixed a bug that was causing issues with some people using windows 10
+
+**************************************************************************************************
+Update 10 [11/10/2015]
+
+VEHICLES:
+--Added Neon Light Color menu & toggle
+--Added Tire Smoke Color menu
+--Added Lowrider Light Color menu
+--Added Lowrider Trim Color menu
+
+MISCELLANEOUS:
+--Added 5 more map blips
+
+**************************************************************************************************
+Update 9 [11/9/2015]
+
+PLAYER:
+--Added 'MP Male' and "MP Female" models to player skins
+
+WEAPONS:
+--Added proper modification options for Machine Pistol
+
+VEHICLES:
+--Added 217 wheels to "Benny's Originals" category 
+--Added all missing chrome wheels to each category
+--Added Rainbow Livery
+--Added Rainbow Trim Lights
+--Added Rainbow Dash & Speaker Lights
+--'Owned Vehicle' remote options now also work from inside vehicle. Must be driver!
+--Added 'Convertable Top' toggle to Owned Vehicle Remote options
+--Added Open/Close All to 'Door Controls'
+--'Save Vehicle' now saves; trim color, dash light color, neon color, tire smoke color
+
+MISCELLANEOUS:
+--Added 'Restore Weapons On Respawn' toggle
+--Added 90 map blips
+
+**************************************************************************************************
+Update 8 [11/2/2015]
+
+ONLINE PLAYERS:
+--Added 'Draw Route On Map'
+
+PLAYER:
+--Removed animal skins for now, causing crash issues with fivem
+
+VEHICLES:
+--Added spawn vehicles by manually entering the model name
+--Random Cosmetic Upgrades: Added all lowrider options
+--'Saved Vehicle' now saves & loads all lowrider options
+--Added Owned Vehicle Remote ON/OFF Options:
+*****Engine
+*****Neons
+*****Windows
+*****Doors
+
+ANIMATIONS:
+--New animations menu (unfinished)
+
+OTHER:
+--Removed spawn-in point at micheals house -- server owner decides spawns now
+
+**************************************************************************************************
+Update 7 [10/26/2015]
+
+PLAYER:
+--Added Keep Clean toggle: keeps player clean of blood, wetness, and bruises
+--Added the new Halloween masks
+--Added 4 new ped models/skins from Lowrider dlc
+*****Benny
+*****Vagos Male (IG)
+*****Vagos Male (CS)
+*****Vagos Male 2
+
+WEAPONS:
+--Added Fire Ammo
+--Added 3 new lowrider dlc weapons
+*****Flashlight
+*****Machete
+*****Machine Pistol
+
+VEHICLES:
+--Removed speedometer on foot
+--Added new dlc horns & missing ill gotten gains horns
+--Added proper lowrider dlc customization names to 'Modifications'
+--Added Torque Boost Options x2-x900
+--Added Power Boost Options menu x75-x500
+--Added 2 more vehicle invincibility options (3 total now)
+--Added all lowrider custom upgrades to "Modifications"
+--Added 3 new vehicles to MUSCLE category:
+*****Albany Franken Strange
+*****Albany Lurcher
+*****Willard Faction
+--Added 1 new vehicle to VANS category:
+*****Declasse Moonbeam
+--Added 6 new vehicles to LOWRIDER category:
+*****Albany Primo
+*****Albany Buccaneer
+*****Declasse Moonbeam
+*****Declasse Voodoo
+*****Vapid Chino
+*****Willard Faction
+
+ANIMATIONS:
+--Brought back the GTA:O taunt animations
+
+WEATHER:
+--Added full weather menu
+
+MISCELLANEOUS:
+--Brought back the Player Notifications toggle
+--Brought back the Player Blips toggle
+--Added Police Blips toggle
+--Added Radio Always Off toggle
+--Added Big HUD toggle (gta online style)
+
+**************************************************************************************************
+Update 6 [10/22/2015]
+
+ONLINE PLAYERS:
+--Added Spectator Mode
+--Added Teleport into player vehicle
+
+PLAYER:
+--Added 'Night Vision'
+--Added 'Thermal Vision'
+--Added Adjustable Wanted Level
+--Added Freeze Wanted Level
+--Added Drunk Mode
+--Added Ragdoll On Demand Hotkey, works with Drunk Mode enabled -- "NO RAGDOLL" MUST BE DISABLED
+*********default key is NUMPAD1, change in config.xml
+
+VEHICLES:
+--Added random horn to 'Random Cosmetic Upgrades"
+--Added Speedometer
+--Added 'No Helmet'
+
+WEAPONS:
+--Added 'Remove All Weapons'
+--Updated 'No Reload', rockets & fireworks now fire without reloading
+
+TELEPORT:
+--Added Teleport To Map Marker Hotkey: default key is F3, change in config.xml
+
+MISCELLANEOUS:
+--Brought back the Player Notifications toggle
+
+**************************************************************************************************
+Update 5 [10/1/2015]
+
+GAMEPLAY:
+--Added Fade-In effect when spawning into game for first time
+
+PLAYER:
+--Added No Ragdoll
+--Added Stamina
+--Default parachute color is now black
+
+WEAPONS:
+--Added Rainbow Flare Gun
+
+VEHICLES:
+--Drift Mode works with SHIFT key now
+--Setting vehicle as Owned now adds a personal car blip to the map, with much better no-despawn persistance
+--Added Option to spawn vehicles with all Max Upgrades
+--Added 'Remote Start Owned Vehicle' to Owned Vehicle menu
+--Added 'Remove All Upgrades' to Modifications menu
+--Added 'Slam Suspension'
+--Added 'Power Boost'
+--Added Rainbow Modes: Paint, Wheels, Neons, Tire Smoke
+--Added "Vehicle Controls"
+*****left & right arrow keys; control turn signals
+*****up & down arrow keys; control front windows
+*****ctrl + up & down arrow keys; control all windows
+*****numpad decimal key; controls interior light
+*****Vehicle Controls reads keys from efmtr-congif.xml
+
+MISCELLANEOUS:
+--Updated Self Radio & Track Skip
+
+EXTRAS:
+--Added No Clip Mode (press F2)
+*****Player & Vehicle will be temporarily invincible while in NoClip Mode
+
+**************************************************************************************************
+Update 4 [9/12/2015]
+
+PLAYER:
+--Full Skin Changer with Save & Load
+
+WEAPONS:
+--Full Individual Weapons Menu
+--Weapons Accessories & Tints/Skins (no IGG dlc options yet)
+--Infinite Ammo
+--Infinite Parachutes
+--No Reload
+--Explosive Ammo
+--Explosive Melee
+
+VEHICLES:
+--Vehicle Saving / Loading
+--Full Car Mods Menu
+--Full Paint Menu
+--Door Controls
+--Set On Ground Properly (puts vehicle back on its wheels if its stuck on roof, etc)
+--Speed Boost & Brake (numpad keys 9 & 3)
+--Drift Mode
+
+TELEPORT:
+--To Marker
+--Show Coords
+--Added more locations
+
+ANIMATIONS:
+--Added more animations
+
+MISCELLANEOUS:
+--Hide HUD
+--Reset All Settings
+
+**************************************************************************************************
+Update 3 [9/1/2015]
+
+PLAYER:
+--Fast Run
+--Fast Swim
+--Invisibilty
+
+VEHICLES:
+--Added Full Vehicle Spawner
+--Added Spawn Into Vehicle Toggle
+--Added Cannot be pulled out of vehicle
+--Added Cannot fall off motorcycles/bikes
+
+MISCELLANEOUS:
+--Player Blips & Player Overhead Names are always on now. Toggles have been removed
+--Player Voice / Speaking Notifications are ON by default now
+--Added Portable Radio
+
+EXTRAS:
+--Moved some stuff around to make room for future updates
+--Menu work & code cleanup / optimizing
+--Database stuff, preparing for future SAVE features
+
+**************************************************************************************************
+Update 2 [8/24/2015]
+
+PLAYER:
+--Invincibility
+--Super Jump
+--Everyone Ignores you
+--Police Ignore You
+--Never Wanted
+
+VEHICLES:
+--Fixed car retrieving: now spawns facing the same direction you are
+--Added 'Clean & Repair Vehicle' option to vehicle management
+--Added "Max Performance Upgrades" option to vehicle management
+--Added "Max Random Cosmetic Upgrades" option to vehicle management
+
+MISCELLANEOUS:
+--Added new default spawn point at michaels house
+--Added spawn with all weapons (full ammo), & parachute by default
+--Added configuration option for "Show Voice Chat Speaker" (Credit: thedroidgeek & YuRaNnNzZZ)
+--Added fix for the head display setting bug (Credit: thedroidgeek)
+
+**************************************************************************************************
+Update 1 [8/19/2015]
+ 
+INITIAL FIXES:
+--Added a check for any occupants before exploding owned car.
+--Added a check for any occupants before teleporting vehicle to self.
+--Added a check for any occupants before teleporting self into owned car, if there is someone else driving you will spawn in as a passenger.
+
+ONLINE PLAYERS:
+--Faster connected users list refresh
+
+--Fixed vehicle controls:
+----setting owned car is more accurate
+----added teleport into owned car
+----added teleport owned car to self
+----exploding owned vehicle now works (must be empty)
+
+ANIMATIONS:
+--Whole body now animates
+
+EXTRAS:
+--New colors!
+--Rearranged menu options for quicker access
+--Added Exit
+----uses the cmd system command: taskkill /F /T /IM FiveM.exe
+----kills the task/image immediately, gets everything in tree.
