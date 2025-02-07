@@ -7,7 +7,7 @@ After=network.target
 [Service]
 User=root
 Group=root
-ExecStart=/bin/bash -c "bash /home/ubuntu/FXServer/run.sh server.cfg"
+ExecStart=/bin/bash -c "bash /CHANGE/THIS/TO/WHERE/FXSERVER/IS/INSTALLED/FXServer/run.sh server.cfg"
 Restart=always
 
 [Install]
