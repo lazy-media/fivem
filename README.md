@@ -1,146 +1,112 @@
-# Consideration
-I have taken a lot of time to put this repository together. If you found it useful or used it, please consider [donating](https://www.paypal.com/paypalme/lazymediawa)
+# 🚀 FiveM Server Setup (QB-Core Version)
 
-# FiveM Server Setup
-FiveM Server Setup. QB-Core Version. Comes with modded vehicles, map mods, everything you need.
-**OVER 400 VEHICLES**
+**Complete FiveM server setup with 400+ modded vehicles, map mods, and everything you need!**
 
-# NOTICE
-## THIS REPOSITORY IS VERY LARGE. ABOUT 12GB.
-- I take no credit in creating any of these. I simply just gathered, renamed and organized all the resources necessary to run a FiveM server and put it all in one place.
-- I tried to make this as easy as possible for me or anyone else who needs this.
-- This repository has the latest server artifacts included. (May need to still update QB-Core artifacts if using QB-Core)
-- `CarPack0` has vehicles that I personally found on [GTA5 Mods](https://www.gta5-mods.com/) that worked.
-- `CarPack2` is a specially made repository by someone else. For this reason only, any duplicate vehicles found within the other car packs will be removed as to not conflict or double up on resources.
-- Any duplicate vehicles have been removed from this repository. All cars are listed in alphabetical order in the `vMenu_Addons_config.json` file.
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/lazymediawa) 
+[![GitLab Mirror](https://img.shields.io/badge/Mirror-GitLab-orange.svg)](https://link.lazymedia.media/gitlab-fivem)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000.svg)](https://link.lazymedia.media/ytchannel)
 
-# Resources
+---
 
-- [FiveM Docs](https://docs.fivem.net/docs/server-manual/setting-up-a-server-vanilla/)
-- [FiveM Server Download (Latest Build Number 12629)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/12629-1035d9b5ef145feff915708e4c02a3300e3a53c9/fx.tar.xz)
-- [CarPack0 / GTA5 Mods](https://www.gta5-mods.com/)
-- [CarPack1](https://github.com/five-m/Vehicles/tree/master)
-- [PLOKS_CARS](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack)
-- [CarPack3](https://github.com/Zerofour04/Fivem-BigCarPack)
-- [EasyAdmin Documentaion](https://easyadmin.readthedocs.io/en/latest/install/)
-- [EasyAdmin GitHub Repository](https://github.com/Blumlaut/EasyAdmin)
-- [LambdaMenu Cfx.re Documentation](https://forum.cfx.re/t/release-lambda-menu/146)
-- [LambdaMenu GitHub Repository](https://github.com/citizenfx/project-lambdamenu)
-- [vMenu Installation Documentaion](https://docs.vespura.com/vmenu/installation/)
-- [vMenu GitHub Repository](https://github.com/TomGrobbe/vMenu)
+## ⚠️ IMPORTANT NOTICE
+**Repository Size:** ~12GB  
+**Credits:** This is a curated collection, not original work. All credits go to original creators.
 
-# ND-Core Framework
+### Key Features:
+- Latest server artifacts included
+- 400+ carefully selected vehicles
+- Organized, renamed, and de-duplicated resources
+- Pre-configured vMenu addons
+- Detailed setup instructions
 
-- [ND-Core Framework TxAdmin Recipe / GitHub](https://github.com/ND-Framework/txadmin-recipe)
+---
 
-# Assumptions
+## 🔗 Essential Resources
 
-- This repository assumes your Ubuntu Server is setup as standard
-- This repository assumes your Ubuntu Server username is `ubuntu`
-- Please Double check any files to make sure your paths are correct
-- This repository assumes your main home directory is `/home/ubuntu/`
+| Resource | Link |
+|----------|------|
+| FiveM Docs | [Documentation](https://docs.fivem.net/docs/server-manual/setting-up-a-server-vanilla/) |
+| Latest Server Build | [Download (Build 12629)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/12629-1035d9b5ef145feff915708e4c02a3300e3a53c9/fx.tar.xz) |
+| Vehicle Packs | [CarPack0](https://www.gta5-mods.com/) • [CarPack1](https://github.com/five-m/Vehicles/tree/master) • [PLOKS_CARS](https://github.com/PLOKMJNB/FiveM-Civ-Car-Pack) • [CarPack3](https://github.com/Zerofour04/Fivem-BigCarPack) |
+| Admin Tools | [EasyAdmin](https://github.com/Blumlaut/EasyAdmin) • [LambdaMenu](https://github.com/citizenfx/project-lambdamenu) • [vMenu](https://github.com/TomGrobbe/vMenu) |
 
-# Setup
+---
 
-- Install Ubuntu Server 20.04 or higher
-- Install [Webmin](https://webmin.com/download/) for ease of use for navigating the Ubuntu Server
-- Or use something like MobaXterm, or XPipe to transfer files to the FiveM Server. It's your choice on how you want to do this.
+## 🛠️ Setup Instructions
 
-# Instructions
+### Prerequisites
+- Ubuntu Server 20.04+
+- Recommended tools:
+  - [Webmin](https://webmin.com/download/)
+  - MobaXterm or XPipe for file transfer
 
-- For Best Results on Installing this correctly, watch the [YouTube Video]() I made for it.
-- This repository is meant to be downloaded as a whole.
-- Please follow these instructions carefully.
+### 🚀 Installation Process
 
-## Part 1
-- Download repository
-- Grab something to eat or a coffee and wait for this download...
-- Navigate to fivem folder
-- Extract `fx.tar.xz`
-- Rename this `fx` folder to `FXServer`
-- Edit the `fxserver.server` file and update the appropriate path
-- Copy the `fxserver.service` file into `/etc/systemd/system`
-- Start the service with
-  ```
-  systemctl start fxserver
-  ```
-- Enable this service to start at system boot with
-  ```
-  systemctl enable fxserver
-  ```
+#### Part 1: Server Setup
 
-# Part 2
+# Download and extract server files
 
-- Navigate to the `http://YOUR.SERVER.IP.HERE:40120` from another PC
-  - This should open up TXAdmin
-  - Setup TXAdmin as you would
-
-- At the TXADMIN page for Picking your Recipe, Choose which every one you want, I prefer QB-Core Framework, but these have been tested on both ESX and QB-Core.
-
-# Part 3
-
-- When TXAdmin is complete, ssh back into the ubuntu server.
-- Navigate back to your home directory or wherever you installed FiveM to.
-  - For me it is `cd \home\ubuntu\FXServer\`
-  - If you show what is listed in the folder with `ls -a`, you should have a folder called `server`
-  - Navigate into this folder
-  - You should have a folder called `txData`
-  - Navigate into this folder
-  - List the contents again
-    - You should have a folder named something like `CFXDefault...`, `ESXLEGACY...`, or `QBCoreFramework...` depending on which version you installed
-    - Navigate into your appropriate server folder.
-    - List the Contents of this folder
-    - You should have a `resources` folder in here
-
-The full command to change into this directory should be something like `cd \home\ubuntu\FXServer\server\txData\QBCoreFramework_jfieo38.base\resources\`
-
-# Part 4 (Adding Resources)
-
-- From this repository, there are 2 Folders named `[vehicles]` and `[map_mods]`.
-  - Copy both of these folders into your `resources` folder.
-
-- Edit your server config, preferrebly from TXAdmin Web Interface, or you can edit it through ssh
-  - Your server config file is located in `\home\ubuntu\FXServer\server\txData\QBCoreFramework_xxxxxxx.base\` named `server.cfg`
-
-- Add the following to your `server.cfg` file to enable the mods
-
-**For All Vehicles**
+```bash
+mv fx FXServer
 ```
+
+# Configure service
+
+```bash
+sudo cp fxserver.service /etc/systemd/system/
+sudo systemctl start fxserver
+sudo systemctl enable fxserver
+```
+
+#### Part 2: TXAdmin Configuration
+
+  1.  Access TXAdmin at http://YOUR.SERVER.IP.HERE:40120
+
+  2.  Select your preferred framework (QB-Core recommended)
+
+#### Part 3: Directory Structure
+
+Navigate to your resources folder:
+
+```bash
+cd /home/ubuntu/FXServer/server/txData/QBCoreFramework_*/resources/
+```
+
+#### Part 4: Adding Resources
+
+  1.  Copy [vehicles] and [map_mods] folders to your resources directory
+
+  2.  Add to server.cfg:
+
+```cfg
+# Vehicle Packs
 ensure [vehicles]
-```
-
-**For Indvidual Car Packs**
-```
 ensure [CarPack0]
-```
-```
 ensure [CarPack1]
-```
-```
 ensure PLOKS_CARS
-```
-```
 ensure [CarPack3]
-```
 
-**For Map Mods**
-```
+# Map Mods
 ensure [map_mods]
 ```
 
+## 🎁 BONUS FEATURES
+vMenu Configuration
 
-# BONUS
+  -  Use the provided vMenu_addon_conf.json to enable all vehicles in vMenu
 
-## vMenu
+Admin Vehicle
 
-If you have vMenu installed, copy the contents of the `vMenu_addon_conf.json` to your vMenu addon configuration to enable the vehicles to be selected using vMenu
+  -  Spawn secret admin vehicle with name: sfbc3
 
+---
 
-# Admin Vehicle
+## 💖 Support This Project
 
-- In vMenu or however you spawn vehicles by name, there is an admin vehicle in `[CarPack0]` that is not listed in the vMenu Car Addons Menu. To Spawn this vehicle by name enter `sfbc3`.
+[![Donate](https://img.shields.io/badge/Donate-Support_My_Work-FF6F00?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/lazymediawa)
 
-# Additonal Information
-- There is a backup of this repository on my personal Gitlab server. You can find the repository [here.](https://link.lazymedia.media/gitlab-fivem)
-- [YouTube Channel](https://link.lazymedia.media/ytchannel)
-- [Lazy Media's Website](https://link.lazymedia.media/UODds)
+## 🔗 Additional Information
+
+[![GitLab Mirror](https://img.shields.io/badge/GitLab_Backup-Repository-orange?style=for-the-badge&logo=gitlab)](https://link.lazymedia.media/gitlab-fivem)
+[![YouTube Channel](https://img.shields.io/badge/YouTube-Channel-FF0000?style=for-the-badge&logo=youtube)](https://link.lazymedia.media/ytchannel)
+[![Website](https://img.shields.io/badge/Lazy_Media-Website-00AA00?style=for-the-badge&logo=wordpress)](https://link.lazymedia.media/UODds)
